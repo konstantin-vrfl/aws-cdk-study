@@ -1,10 +1,24 @@
 ## Useful commands
 
- * 'cdk init <template> --language <language>'   initializes the app (cdk init app --language typescript)
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
- * 'cdk destroy'	 destroying the stack
+npm run build   compile typescript to js
+npm run watch   watch for changes and compile
+npm run test    perform the jest unit tests
+npm list (-g) <package>		checks whether project is installed
+npm outdated	checks installed modules versions
+npm update (-g) (--save-prod/--save-dev) <module>	does not work for now (?) (update repo ?)
+npm init		inits package (creates package json)
+ 
+ 
+ 
+ 
+cdk init <template> --language <language>   initializes the app (cdk init app --language typescript) 
+cdk deploy      deploy this stack to your default AWS account/region
+cdk diff        compare deployed stack with current state
+cdk synth       emits the synthesized CloudFormation template
+cdk destroy	 	destroying the stack
+
+
+
+ERROR
+1) Error: This stack uses assets, so the toolkit stack must be deployed to the environment (Run "cdk bootstrap aws://unknown-account/unknown-region")
+cdk bootstrap aws://758686140866/eu-central-1
